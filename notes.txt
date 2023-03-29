@@ -1,0 +1,79 @@
+DOM:(Document Object Model) + Modern JS 
+
+document.getElementById("id");
+document.querySelector('#id'); ( For ID)
+document.querySelector('.class-name'); ( For Class)
+
+keep in mind(
+    # All of them returns Single item
+)
+
+document.getElementsByClassName("class-name");
+document.getElementsByTagName("h1");
+document.querySelectorAll('.class-name');
+
+
+keep in mind(
+    # These methods use document object
+    # These methods return multiple items(elements)
+    # The list returned is not an array
+)
+
+trick - [ Highlight an element on the web page and type $0 on console . you will grab that particular element ] 
+
+UPDATE THE EXISTING CONTENT IN A WEB PAGE:
+
+* innerHTML  ---  gets an element and all of it's decendants
+                  sets an elements HTML content
+                  Example: const variable = document.querySelector(".class-name");
+                           variable.innerHTML --- get
+                           variable.innerHTML = 'anything' --- set
+                           
+* outerHTML
+* textContent  --- same as innerHTML
+                   diff - it treats the tags as text but
+                          innerHTML renders the tags.
+
+* innerText  --- same as textContent 
+                 if an elements display:hidden it won't return that element. 
+                 
+
+ADDING NEW ELEMENT/CONTENT:
+
+* createElement --- we can create an element by using this
+                    Example: let newpara = document.createElement('p');
+
+* appendChild --- we can append an element into a already created element
+                  Example: 
+                  const variable = document.querySelector('.class-name');
+                  variable.appendChild(newpara);
+                  # Last Sibling
+
+* insertAdjacentHTML ---  it has to be called with Two arguments
+                          1(arg). location / position
+                                  -> beforebegin
+                                  -> afterbegin
+                                  -> beforeend
+                                  -> afterend
+                          2(arg). text / content
+
+CREATING TEXT- NODE:
+
+1. create an element, create a textnode and then append it into the element
+document.createTextNode('I am the text'); 
+
+2. create an element, 
+   myPara.textContent = 'I am the Text ';
+
+
+
+
+ 
+
+
+
+
+
+
+
+
