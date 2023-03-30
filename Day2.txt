@@ -1,0 +1,55 @@
+BROWSER EVENTS:
+events are almost invisible. 
+
+moniterEvents() --- used to check whenever a event is triggered
+
+-> event
+-> response to event
+-> data storing in event
+-> stop an event
+-> lifecycle of event
+
+EVENT TARGET: interface
+
+1. addEventListener()
+2. removeEventListener()
+3. dispatchEventListener()
+
+
+Node inherits from EventTarget()
+Element inherits from Node
+
+Pseudocode:
+# addEventListener
+<event-target>.addEventListener(<type of event>, <function>)
+
+# removeEventListener
+         CONDITIONS:
+         -> same target
+         -> same function
+         -> same type of eventlistener
+
+Phases of an Event:
+1. Capturing Phases
+2. At traget Phases
+3. Bubbling phase  
+
+by default addEventListener gets executed in bubbling phase.
+
+we can change that by giving an extra parameter
+
+.addEventListener('click', function, true)
+                                       |
+                                       |
+       
+       
+THE DEFAULT ACTION:
+
+.preventDefault() --- we can prevent the default behaviour of any event                                gets executed in capturing phase   
+
+
+THE EVENT OBJECT:
+
+HOW TO AVOID TOO MANY EVENTS:
+
+

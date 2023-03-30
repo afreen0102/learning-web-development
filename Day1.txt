@@ -31,8 +31,7 @@ UPDATE THE EXISTING CONTENT IN A WEB PAGE:
                            
 * outerHTML
 * textContent  --- same as innerHTML
-                   diff - it treats the tags as text but
-                          innerHTML renders the tags.
+                   this does not render the tags only the text.
 
 * innerText  --- same as textContent 
                  if an elements display:hidden it won't return that element. 
@@ -57,6 +56,10 @@ ADDING NEW ELEMENT/CONTENT:
                                   -> afterend
                           2(arg). text / content
 
+* removeChild  ---  parent element must always be known to remove the element  
+                    Example: parent.removechild()                     
+
+
 CREATING TEXT- NODE:
 
 1. create an element, create a textnode and then append it into the element
@@ -64,6 +67,20 @@ document.createTextNode('I am the text');
 
 2. create an element, 
    myPara.textContent = 'I am the Text ';
+
+
+STYLING THE WEBPAGE CONTENT:
+
+* .style ---  Ex: content.style.color = 'red';
+
+* .cssText --- Ex: content.style.cssText = 'color:green; background-color:yellow; font-size:4em;';
+
+* .setAttribute --- Ex: content.setAttribute('style', 'color:white; background-color:yellow;');
+                        content.setAttribute("id", "Heading");
+
+* .className  ---
+
+* .classList  ---
 
 
 
