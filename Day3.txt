@@ -1,0 +1,55 @@
+Document Fragment:
+
+   light weight document object.
+
+Optimizing JavaScript Code:
+
+understood reflow and repaint
+
+PERFORMANCE: 
+let t1 = performance.now()
+
+THE CALL STACK:
+
+single-threading: One Command at a time
+(js is single threaded language)
+
+
+function addPara() {
+    let para = document.createElement('p');
+    para.textContent = 'Js is Single';
+    document.body.appendChild(para);
+}
+
+function appendNewMeassage() {
+    let para = document.createElement('p');
+    para.textContent = 'Js is Single';
+    document.body.appendChild(para);   
+}
+
+addPara();
+appendNewMeassage();
+
+
+
+~ 1 hour - JavaScript optimization
+~ Learned about very intresting stuff today.
+  Reflow and Repaint.
+
+
+  basically, reflow is a phase where re-calculations are done.(for height width margin paddind..,etc)
+  and repaint is phase where the UI is displayed. 
+
+
+
+
+EVENT LOOP: 
+
+a loop between 
+          * Call Stack
+          * Browser
+          * event Queue
+
+by Philip Robert           
+
+
