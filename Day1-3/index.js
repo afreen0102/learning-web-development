@@ -66,9 +66,6 @@ let t4 = performance.now();
 
 console.log("Second loop took " + (t4-t3) + "ms");
 
-
-
-
 function addPara() {
     let para = document.createElement('p');
     para.textContent = 'Js is Single';

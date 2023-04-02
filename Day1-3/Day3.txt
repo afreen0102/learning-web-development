@@ -40,9 +40,6 @@ appendNewMeassage();
   basically, reflow is a phase where re-calculations are done.(for height width margin paddind..,etc)
   and repaint is phase where the UI is displayed. 
 
-
-
-
 EVENT LOOP: 
 
 a loop between 

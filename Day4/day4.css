@@ -1,0 +1,47 @@
+.container{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid lightgray;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    background-color: #ebf6f5;
+}
+
+header{
+    text-align: center;
+    padding: 40px;
+    color: #12343b;
+}
+
+.content{
+    display:flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.left-side{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn{
+    background-color:#5cbdb9;
+    color: white;
+    padding: 8px;
+    border: white;
+    border-radius: 5px;
+
+}
+
+.guess{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid lightgrey;
+}
+
+.message{
+    font-size:x-large;
+}
